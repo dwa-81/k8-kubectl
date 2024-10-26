@@ -3,9 +3,9 @@ kind: Pod
 metadata: 
   name: multicontainer
 spec:
-- name: nginx
-  image: nginx
-- name: almalinux
-  image: almalinux:9
-  command: ["slaeep","1000"]
-  
+   containers:
+   - name: nginx
+     image: nginx
+   - name: almalinux
+     image: almalinux:9
+     command: ["slaeep","1000"]
