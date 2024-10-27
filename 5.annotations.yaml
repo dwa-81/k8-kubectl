@@ -1,0 +1,11 @@
+kind: Pod
+apiVersion: v1
+meatadata:
+  name: annotations
+  annotaions:
+    project: expense
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+    
