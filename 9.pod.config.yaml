@@ -1,7 +1,7 @@
 kind: Pod
 apiVersion: v1
 metadata: 
-  name: Pod-config
+  name: pod-config
 spec:
   containers:
   - name: nginx
@@ -17,3 +17,4 @@ spec:
           ConfigMapKeyRef:
              name: nginx-config
              key: duration
+             
