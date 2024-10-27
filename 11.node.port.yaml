@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
    name: nginx-np
 spec:
-   type: NodePort
+  type: NodePort
   selector:
     project: expense
     module: backend
@@ -13,4 +13,3 @@ spec:
     protocol: TCP
     port: 80  # serviceport
     targetPort: 80  # container port
-    
