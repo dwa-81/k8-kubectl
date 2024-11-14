@@ -25,13 +25,13 @@ spec:
      requests:
        storage: 5Gi
 
- apiVersion: v1
- kind: Pod
- metadata:
+apiVersion: v1
+kind: Pod
+metadata:
    name: ebs-static
    labels:
      purpose: ebs-static
- spec:
+spec:
    nodeSelector:
      topology.kubernetes.io/zone: us-east-1a
    containers:
